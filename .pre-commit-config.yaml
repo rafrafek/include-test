@@ -8,5 +8,5 @@ repos:
         entry: poetry run pyright
         language: node
         require_serial: true
-        types: [python]
+        pass_filenames: false
         additional_dependencies: ["pyright@1.1.321"]
