@@ -1,0 +1,12 @@
+default_language_version:
+    python: python3.9
+repos:
+  - repo: local
+    hooks:
+      - id: pyright
+        name: pyright
+        entry: poetry run pyright
+        language: node
+        require_serial: true
+        types: [python]
+        additional_dependencies: ["pyright@1.1.321"]
